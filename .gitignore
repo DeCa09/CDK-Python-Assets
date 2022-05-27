@@ -4,7 +4,12 @@ __pycache__
 .pytest_cache
 .venv
 *.egg-info
+.DS_STORE
 
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# ignore packaged lambda functions
+*.zip
+
