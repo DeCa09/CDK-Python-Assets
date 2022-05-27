@@ -10,6 +10,6 @@ __pycache__
 .cdk.staging
 cdk.out
 
-# ignore packaged lambda functions
+# ignore packaged lambda functions and other archive files
 **/*.zip
 
