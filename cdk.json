@@ -28,6 +28,5 @@
       "aws",
       "aws-cn"
     ]
-  },
-  "region": "eu-west-1"
+  }
 }
