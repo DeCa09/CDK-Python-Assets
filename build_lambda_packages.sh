@@ -31,6 +31,14 @@ do
     pip install -q -r requirements.txt -t . --disable-pip-version-check 
     rm requirements.txt
     zip -q -r "$PACKAGE".zip *
+    
+    # clean up after creating the package
+    mv "$PACKAGE".zip ..
+    mv "$PACKAGE".py ..
+    rm -rf ./*
+    mv ../"$PACKAGE".zip .
+    mv ../"$PACKAGE".py .
+
     cd ..
     echo ">>>>> Package '$PACKAGE' has been built."
     echo "=============================================="
